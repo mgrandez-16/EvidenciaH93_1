@@ -17,4 +17,14 @@ import javax.persistence.*;
 
 public class Matricula {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idmatricula;
+
+    @Column(name = "idcurso")
+    private long idcurso;
+
+    @Column(name = "idalumno")
+    private long idalumno;
+
 }

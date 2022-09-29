@@ -16,4 +16,14 @@ import javax.persistence.*;
 @Table(name = "cursos")
 
 public class Cursos {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idcurso;
+
+    @Column(name = "nomcurso")
+    private String nomcurso;
+
+    @Column(name = "creditos")
+    private String creditos;
+
 }
